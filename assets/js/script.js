@@ -1,6 +1,6 @@
 // 'use strict';
 
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+const elementToggleFunc = function (elem) { elem.classList.toggle("activePage"); }
 
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
@@ -22,8 +22,8 @@ const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
+  modalContainer.classList.toggle("activePage");
+  overlay.classList.toggle("activePage");
 }
 
 // add click event to all modal items
@@ -67,11 +67,11 @@ const filterItems = document.querySelectorAll("[data-filter-item]");
 const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
     if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
+      filterItems[i].classList.add("activePage");
     } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+      filterItems[i].classList.add("activePage");
     } else {
-      filterItems[i].classList.remove("active");
+      filterItems[i].classList.remove("activePage");
     }
   }
 }
@@ -83,8 +83,8 @@ for (let i = 0; i < filterBtn.length; i++) {
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
+    lastClickedBtn.classList.remove("activePage");
+    this.classList.add("activePage");
     lastClickedBtn = this;
   });
 }
@@ -120,12 +120,12 @@ for (let i = 0; i < navigationLinks.length; i++) {
     sessionStorage.setItem("activePage", selectedPage); // Store the active page in sessionStorage
     for (let i = 0; i < pages.length; i++) {
       if (selectedPage === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+        pages[i].classList.add("activePage");
+        navigationLinks[i].classList.add("activePage");
         window.scrollTo(0, 0);
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        pages[i].classList.remove("activePage");
+        navigationLinks[i].classList.remove("activePage");
       }
     }
   });
@@ -141,11 +141,11 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i < pages.length; i++) {
     const pageName = pages[i].dataset.page;
     if (activePage === pageName) {
-      pages[i].classList.add("active");
-      navigationLinks[i].classList.add("active");
+      pages[i].classList.add("activePage");
+      navigationLinks[i].classList.add("activePage");
     } else {
-      pages[i].classList.remove("active");
-      navigationLinks[i].classList.remove("active");
+      pages[i].classList.remove("activePage");
+      navigationLinks[i].classList.remove("activePage");
     }
   }
 });
@@ -208,11 +208,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function showPage(page) {
     const pages = document.querySelectorAll(".page");
     for (const pageElement of pages) {
-      pageElement.classList.remove("active");
+      pageElement.classList.remove("activePage");
     }
 
     const targetPage = document.getElementById(`page${page}`);
-    targetPage.classList.add("active");
+    targetPage.classList.add("activePage");
   }
 
   function displayPagination() {
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
       pageLink.textContent = i;
 
       if (i === currentPage) {
-        pageLink.classList.add("active");
+        pageLink.classList.add("activePage");
       }
 
       pageLink.addEventListener("click", function (event) {
