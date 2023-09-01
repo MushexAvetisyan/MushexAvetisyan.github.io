@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7609128d-fb02-4674-a6c8-c1b54704f1fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/1000017499.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/1000017499e.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +57,8 @@
       <workItem from="1690893263200" duration="5164000" />
       <workItem from="1690957420452" duration="3467000" />
       <workItem from="1690966877791" duration="585000" />
-      <workItem from="1690992840753" duration="1027000" />
+      <workItem from="1690992840753" duration="1125000" />
+      <workItem from="1693549145929" duration="18000" />
     </task>
     <servers />
   </component>
