@@ -164,6 +164,11 @@ body { background: var(--smoky-black); }
   display: none;
 }
 
+.books_section{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .page.activePage {
   display: block;
 }
@@ -1926,16 +1931,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 .book-card {
-  width: 280px;
+  width: 190px;
   padding: 16px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--orange-yellow-crayola);
+  margin: 0.5rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .book-card .book-card__cover {
   position: relative;
-  width: 200px;
-  height: 300px;
+  width: 140px;
+  height: 200px;
   margin: 0 auto 8px auto;
   perspective: 1000px;
 }
@@ -1973,11 +1979,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   background-color: #e1e1e1;
 }
 .book-card .book-card__title {
-  font-size: 1.5em;
+  font-size: 1rem;
   margin-bottom: 8px;
 }
 .book-card .book-card__author {
-  color: #757575;
+  color: red;
   font-size: 1em;
 }
 .book-card:hover .book-card__book {
